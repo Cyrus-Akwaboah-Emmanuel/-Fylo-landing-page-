@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* ### Primary */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+
+    /* ### Accent */
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    /* ### Neutral */
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+
+    /* fonts */
+    --font-Raleway: 'Raleway', sans-serif;
+    --font-Open-Sans: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 2rem;
+    font-family: var(--font-Open-Sans);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-Raleway);
+    justify-content: space-between;
+}
+
+nav img{width: 30%;}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: var(--Very-Dark-Blue);
+    text-decoration: none;
+}
+
+.illustration{width: 100%;}
+
+.hero{padding: 8rem 0px;}
+
+.info h1, .info p{
+    text-align: center;
+    padding: 1rem 0px;
+    color: var(--Very-Dark-Blue);
+}
+.info h1{    
+    font-weight: 700;
+    font-family: var(--font-Raleway);
+}
+
+.hero-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button{
+    width: 100%;
+    font-weight: 700;
+    margin: 1rem 0px 0px;
+    border: 0px;
+    outline: none;
+    padding: 1.5rem;
+    cursor: pointer;
+    color: var(--Light-Grayish-Blue);
+    font-family: var(--font-Raleway);
+    background-color: var(--Bright-Blue);
+    box-shadow: -1px 1px 13px -6px rgba(0,0,0,0.75);
+}
+
+button, .email{
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.hero-form{position: relative;}
+.email{
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* position: absolute; */
+    /* border-radius: 5px; */
+    border: 1px solid black;
+    outline: none;
+    background: none;
+}
+.email:hover{border: 3px solid var(--Desaturated-Blue);}
+
+.email:focus{border: 3px solid var(--Bright-Blue);}
+
+.hero-form label{
+    top: 0.6vh;
+    left: 20px;
+    font-size: 1.2rem;
+    position: inherit;
+}
+
+/* .email:focus ~ .hero-form label{
+    bottom: -1.2vh;
+    left: 20px;
+    font-size: 1rem;
+    position: absolute;
+} */
+
+/* Stay productive, wherever you are */
+.productive{
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    padding: 5rem 0px;
+    background-position: center;
+    background-image: url(images/bg-curve-mobile.svg);
+}
+
+#info-2{
+    padding: 1.5rem 0px;
+}
+#info-2 h2{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem 0px;
+    font-family: var(--font-Raleway);
+}
+#info-2 p{
+    text-align: left;
+    color: gray;
+}
+
+.how-flyo-works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#works{
+    text-decoration: none;
+    color: var(--Moderate-Cyan);
+    padding-bottom: .2rem;
+    font-family: var(--font-Open-Sans);
+    border-bottom: 2px solid var(--Moderate-Cyan);
+}
+
+.ceo{
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: -1px 1px 13px -6px rgba(0,0,0,0.75);
+}
+
+.ceo-img{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ceo-img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.ceo-info h3{
+    font-weight: 700;
+    font-family: var(--font-Raleway);
+}
+.ceo-info p{font-size: 11px;}
+
+
+/* Get early access */
+.access{
+    width: 100%;
+    padding: 5rem 0px;
+    text-align: center;
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Desaturated-Blue);
+}
+
+.access h1{font-family: var(--font-Raleway);}
+.access h1, .access p{padding-bottom: 1.3rem;}
+
+.access-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.access-form .email{background-color: #fff;}
+
+/* footer */
+footer{
+    padding: 3rem 0px;
+    color: var(--Light-Grayish-Blue);
+    background-color: var(--Very-Dark-Blue);
+}
+
+.phone-example, .footerLink{padding: 1.5rem 0px;}
+
+.phone,.example{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.example{padding-top: .8rem;}
+
+.footerLink{list-style: none;}
+
+.footerLink li{padding-bottom: 1rem;}
+
+.footerLink li a{
+    text-decoration: none;
+    font-family: var(--font-Open-Sans);
+    color: var(--Light-Grayish-Blue);
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 800px){
+    nav{padding-top: 1rem;}
+    nav img{width: 150px;}
+    .hero-container{
+        display: flex;
+        gap: 5rem;
+        text-align: left;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .info h1{font-size: 2rem;}
+    .info h1, .info p{text-align: left;}
+    .hero-form{
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+    }
+
+    .email{width: 100%;}
+    button{margin: 0px;  width: 50%;}
+
+    /* Stay productive, wherever you are */
+    .productive-container{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .ceo{width: 70%;}
+
+    #info-2 h2{
+        text-align: left;
+        font-size: 2rem;
+    }
+    #info-2 p{color: var(--Very-Dark-Blue);}
+    .how-flyo-works{justify-content: flex-start;}
+
+    /* Get early access */
+    .access-container{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+
+    .access-form{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .access p{max-width: 500px;}
+    .access-form .email{min-width: 400px;}
+    .access-form button{
+        margin-top: 1rem;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    /* footer */
+    .footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .phone,.example{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .phone-example img{margin-bottom: 1.5rem;}
+}
